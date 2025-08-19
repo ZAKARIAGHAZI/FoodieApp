@@ -1,0 +1,115 @@
+/* ===== Header ===== */
+header {
+  background-color: #008a2f;
+  color: white;
+  padding: 10px 20px;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  
+}
+
+/* ===== Logo ===== */
+.logo {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+.logo-bold {
+  font-weight: 800;
+}
+
+/* ===== Navigation ===== */
+nav ul {
+  display: flex;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+}
+nav ul li {
+  list-style: none;
+}
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+}
+nav ul li a.special-offer {
+  color: orange;
+  font-weight: 600;
+}
+
+/* ===== Search Box ===== */
+.search-box {
+  display: flex;
+  align-items: center;
+  background: #ffffff50;
+  padding: 8px 14px;
+  border-radius: 8px;
+  gap: 8px;
+}
+.search-box input {
+  border: none;
+  outline: none;
+  background: transparent;
+  color: white;
+  font-size: 0.95rem;
+}
+.search-icon, .cart-icon {
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+/* ===== Hamburger ===== */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  color: white;
+  cursor: pointer;
+}
+
+/* ===== Responsive ===== */
+.desktop-only {
+  display: flex;
+}
+.mobile-only {
+  display: none;
+}
+
+@media (max-width: 700px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .desktop-only {
+    display: none;
+  }
+  .mobile-only {
+    display: flex; 
+    margin-top: 15px;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .nav {
+    display: none;
+    width: 100%;
+  }
+  .nav.open {
+    display: block;
+  }
+
+  .nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+    background: #006d25;
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 10px;
+  }
+}
