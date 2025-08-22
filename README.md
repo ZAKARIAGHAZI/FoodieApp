@@ -1,12 +1,98 @@
-# React + Vite
+# FOODIE - Restaurant & Food Delivery App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![React](https://img.shields.io/badge/React-18-blue?logo=react)
+![Redux](https://img.shields.io/badge/Redux-Toolkit-purple?logo=redux)
+![Vite](https://img.shields.io/badge/Vite-4-green?logo=vite)
 
-Currently, two official plugins are available:
+## Table of Contents
+- [Project Overview](#project-overview)  
+- [Features](#features)  
+- [Tech Stack](#tech-stack)  
+- [Installation](#installation)  
+- [Usage](#usage)    
+- [Available Scripts](#available-scripts)    
+- [License](#license)  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## Project Overview
+**FOODIE** is a responsive web application for discovering restaurants, viewing menus, and managing a shopping cart for food orders. The app allows users to:  
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Browse restaurants and their menus  
+- Search for food items  
+- Add items to a cart with live total calculation  
+- Remove items from the cart  
+
+The app is fully responsive and works seamlessly on both desktop and mobile devices.
+
+
+## Features
+- Responsive header with hamburger menu for mobile screens 
+- Shopping cart with quantity and total price calculation  
+- Add/remove items from cart using **Redux Toolkit**  
+- About Us section with responsive image and text  
+- Smooth navigation using **React Router**  
+
+
+## Tech Stack
+- **Frontend:** React.js, React Router  
+- **State Management:** Redux Toolkit  
+- **Icons:** React Icons (Ci, Hi)  
+- **Styling:** CSS  
+- **Build Tool:** Vite  
+
+
+# Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/your-username/foodie.git
+```
+
+Navigate to the project directory:
+
+```bash
+cd foodie
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+-----
+
+# Usage
+
+  * Navigate to **Home** to see the list of restaurants.
+  * Click **Menus** to view items and add them to your cart.
+  * Click the cart icon to view items and totals.
+  * Use the **About Us** page to learn more about the app.
+
+-----
+
+# Available Scripts
+
+  * `npm run dev` - Start the development server
+  * `npm run build` - Build for production
+  * `npm run preview` - Preview the production build
+
+-----
+
+# License
+
+This project is licensed under the MIT License.
+
+-----
+
+# Author
+
+[Zakaria Ghazi](https://github.com/ZAKARIAGHAZI) – GitHub
