@@ -1,0 +1,161 @@
+.footer {
+  background: #002b11;
+  color: #fff;
+  padding: 40px 8% 20px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.footer-logo h2 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.footer-logo .logo-green {
+  color: #28a745;
+  font-weight: 800;
+}
+
+.footer-contact h4,
+.footer-subscribe h4 {
+  margin-bottom: 12px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.footer-contact p {
+  margin: 4px 0;
+  font-size: 14px;
+}
+
+.footer-subscribe {
+  max-width: 300px;
+}
+
+.subscribe-box {
+  display: flex;
+  align-items: center;
+  background: #ffffff10;
+  border: 1px solid #fff;
+  border-radius: 30px;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.subscribe-box input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 8px 12px;
+  color: #fff;
+  font-size: 14px;
+}
+
+.subscribe-box input::placeholder {
+  color: #ddd;
+}
+
+.subscribe-box button {
+  background: #00a23d;
+  border: none;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.subscribe-box button:hover {
+  background: #008c34;
+}
+
+.subscribe-note {
+  font-size: 12px;
+  color: #ccc;
+}
+
+/* Divider */
+.footer-divider {
+  border-top: 1px dashed #555;
+  margin: 20px 0;
+}
+
+/* Bottom bar */
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  font-size: 13px;
+  color: #bbb;
+}
+
+.footer-socials {
+  display: flex;
+  gap: 15px;
+  font-size: 18px;
+}
+
+.footer-socials svg {
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.footer-socials svg:hover {
+  color: orange;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 992px) {
+  .footer-container {
+    align-items: flex-start;
+  }
+
+  .footer-subscribe {
+    width: 100%;
+  }
+
+  .subscribe-box {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .footer {
+    padding: 30px 5% 15px;
+  }
+
+  .footer-logo h2 {
+    font-size: 20px;
+  }
+
+  .footer-subscribe h4,
+  .footer-contact h4 {
+    font-size: 15px;
+  }
+
+  .subscribe-box input {
+    font-size: 13px;
+  }
+
+  .subscribe-box button {
+    padding: 6px 12px;
+    font-size: 13px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+  }
+}

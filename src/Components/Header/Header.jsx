@@ -10,7 +10,6 @@ const Header = () => {
   return (
     <header>
       <div className="header-container">
-        {/* Logo */}
         <div className="logo">
           <span className="logo-bold">FOODIE</span> site
         </div>
@@ -23,18 +22,18 @@ const Header = () => {
         <nav className={menuOpen ? "nav open" : "nav"}>
           <ul>
             <li>
-              <NavLink to="/offers" className="special-offer">
+              <NavLink to="/">
                 Home
               </NavLink>
             </li>
             <li>
-              <NavLink to="/menu">Our Restaurants</NavLink>
+              <NavLink to="/Restaurants">Our Restaurants</NavLink>
             </li>
             <li>
-              <NavLink to="/contact">About Us</NavLink>
+              <NavLink to="/AboutUs">About Us</NavLink>
             </li>
             <li>
-              <NavLink to="/track">Contact</NavLink>
+              <NavLink to="/Contact">Contact</NavLink>
             </li>
           </ul>
 
@@ -45,7 +44,6 @@ const Header = () => {
           </div>
         </nav>
 
-        {/* Search + Cart for desktop only */}
         <div className="search-box desktop-only">
           <CiSearch className="search-icon" />
           <input type="text" placeholder="Search" />

@@ -10,7 +10,6 @@ header {
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  
 }
 
 /* ===== Logo ===== */
@@ -37,7 +36,7 @@ nav ul li a {
   color: white;
   font-weight: 500;
 }
-nav ul li a.special-offer {
+nav ul li a:hover {
   color: orange;
   font-weight: 600;
 }
@@ -58,7 +57,8 @@ nav ul li a.special-offer {
   color: white;
   font-size: 0.95rem;
 }
-.search-icon, .cart-icon {
+.search-icon,
+.cart-icon {
   font-size: 1.3rem;
   cursor: pointer;
 }
@@ -90,7 +90,7 @@ nav ul li a.special-offer {
     display: none;
   }
   .mobile-only {
-    display: flex; 
+    display: flex;
     margin-top: 15px;
     width: 100%;
     justify-content: space-between;
