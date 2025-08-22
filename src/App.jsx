@@ -9,9 +9,17 @@ function App() {
   return (
     <>
       <Header />
-      <Herosection />
       <Routes>
-        <Route path="/" element={<RestaurantList />} />
+        <Route
+          path="/"
+          element={
+            <>
+              <Herosection />
+              <RestaurantList />
+            </>
+          }
+        />
+        <Route path="/restaurants" element={<RestaurantList />} />
         <Route path="/restaurant/:id" element={<RestaurantMenu />} />
       </Routes>
       <Footer />
