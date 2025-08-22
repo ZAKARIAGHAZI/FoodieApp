@@ -40,12 +40,12 @@ const Header = () => {
               <NavLink to="/restaurant/5uUs2b4bQdS3WS8z16LJKw">Menus</NavLink>
             </li>
             <li>
-              <NavLink to="/Contact">Contact</NavLink>
+              <NavLink to="/about">About Us</NavLink>
             </li>
           </ul>
         </nav>
 
-        <div className="search-box desktop-only">
+        <div className="search-box">
           <CiSearch className="search-icon" />
           <input type="text" placeholder="Search" />
           <div className="cart-wrapper" onClick={() => setCartOpen(!cartOpen)}>
@@ -71,7 +71,6 @@ const Header = () => {
                             item.quantity
                           ).toFixed(2)}
                         </span>
-
                         <button onClick={() => handleRemove(item.id)}>
                           Remove
                         </button>
